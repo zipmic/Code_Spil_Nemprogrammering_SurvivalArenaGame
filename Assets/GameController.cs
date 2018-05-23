@@ -72,6 +72,11 @@ public class GameController : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        }
+
      
 
 		

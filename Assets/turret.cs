@@ -30,7 +30,7 @@ public class turret : MonoBehaviour {
 
             counter += Time.deltaTime;
 
-            if (counter > 5f)
+            if (counter > 0.25f)
             {
                 GameObject tmp = Instantiate(PrefabBullet) as GameObject;
                 tmp.transform.position = SpawnPoint.transform.position;

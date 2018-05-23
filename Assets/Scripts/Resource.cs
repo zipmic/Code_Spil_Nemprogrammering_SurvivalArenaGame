@@ -43,7 +43,7 @@ public class Resource : MonoBehaviour {
 
         c.enabled = false;
         mr.enabled = false;
-        yield return new WaitForSeconds(60);
+        yield return new WaitForSeconds(15);
         mr.enabled = true;
         c.enabled = true;
         Health = 5;

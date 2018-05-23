@@ -49,7 +49,7 @@ public class WeaponController : MonoBehaviour
             {
                 RaycastHit hit;
 
-                if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 10, TerrainMask))
+                if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 7, TerrainMask))
                 {
                 
                     TurretPlaceHolder.gameObject.SetActive(true);
