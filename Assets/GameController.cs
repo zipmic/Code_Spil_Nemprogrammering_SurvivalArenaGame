@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
 
     public GameObject EndExplosion;
 
+    private float CounterForDifficulty = 0;
+
 
     public void BaseDestroyed()
     {
@@ -47,6 +49,7 @@ public class GameController : MonoBehaviour
 
         if (RunTimer)
         {
+            CounterForDifficulty += Time.deltaTime;
             counter += Time.deltaTime;
             TidText.text = "Time: "+((int)(counter));
 
@@ -61,7 +64,15 @@ public class GameController : MonoBehaviour
             }
            
 
+            if (CounterForDifficulty > 30)
+            {
+                DifficultyLevel += 1;
+                CounterForDifficulty = 0;
+            }
+
         }
+
+     
 
 		
 	}

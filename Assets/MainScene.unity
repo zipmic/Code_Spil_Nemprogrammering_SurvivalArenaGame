@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18384321, g: 0.228589, b: 0.30079505, a: 1}
+  m_IndirectSpecularColor: {r: 0.1838429, g: 0.22858867, b: 0.30079406, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -168,6 +168,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -181,20 +191,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 6177452}
---- !u!114 &6177455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 6177454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &6177456
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -210,6 +206,60 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 18.8, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1001 &24849569
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 292.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 43.032085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.7932339
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 34.332314
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &38599045 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -307,6 +357,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -320,20 +380,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 46824967}
---- !u!114 &46824970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 46824969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &46824971
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -404,6 +450,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -417,20 +473,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 61336540}
---- !u!114 &61336543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61336542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &61336544
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -500,6 +542,16 @@ Prefab:
     - target: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647, type: 2}
       propertyPath: m_Name
       value: Tree1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
@@ -598,6 +650,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -611,20 +673,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 83576683}
---- !u!114 &83576686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 83576685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &83576687
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -694,6 +742,16 @@ Prefab:
     - target: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647, type: 2}
       propertyPath: m_Name
       value: Tree1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
@@ -792,6 +850,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -805,20 +873,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 109406782}
---- !u!114 &109406785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 109406784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &109406786
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -876,7 +930,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &149366365
 Prefab:
@@ -915,7 +969,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4802666896424662, guid: c54db87cd1d174cc08c4dbe3f8020deb, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1485593249756406, guid: c54db87cd1d174cc08c4dbe3f8020deb, type: 2}
       propertyPath: m_IsActive
@@ -979,6 +1033,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -992,20 +1056,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 156814588}
---- !u!114 &156814591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 156814590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &156814592
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1076,6 +1126,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -1089,20 +1149,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 172383419}
---- !u!114 &172383422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 172383421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &172383423
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1247,6 +1293,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -1260,20 +1316,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 251130763}
---- !u!114 &251130766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 251130765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &251130767
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1380,7 +1422,7 @@ RectTransform:
   - {fileID: 1006961634}
   - {fileID: 722710469}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1442,6 +1484,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -1455,20 +1507,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 297166474}
---- !u!114 &297166477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 297166476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &297166478
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1539,6 +1577,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -1552,20 +1600,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 298625934}
---- !u!114 &298625937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 298625936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &298625938
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1636,6 +1670,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -1649,20 +1693,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 311438224}
---- !u!114 &311438227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 311438226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &311438228
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1941,6 +1971,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -1954,20 +1994,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 369941328}
---- !u!114 &369941331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 369941330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &369941332
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2168,6 +2194,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -2181,20 +2217,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 375855401}
---- !u!114 &375855404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 375855403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &375855405
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2265,6 +2287,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -2278,20 +2310,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 376261714}
---- !u!114 &376261717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 376261716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &376261718
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2445,7 +2463,7 @@ Transform:
   - {fileID: 422877510}
   - {fileID: 1011365350}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &422877509
 Prefab:
@@ -2584,7 +2602,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 27.351002, y: -34.475002, z: -10.994}
 --- !u!1001 &470534634
 Prefab:
@@ -2641,6 +2659,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -2654,20 +2682,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 470534634}
---- !u!114 &470534637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 470534636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &470534638
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2738,6 +2752,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -2751,20 +2775,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 536916240}
---- !u!114 &536916243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 536916242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &536916244
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2896,6 +2906,16 @@ Prefab:
     - target: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647, type: 2}
       propertyPath: m_Name
       value: Tree1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
@@ -3075,6 +3095,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -3088,20 +3118,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 676032610}
---- !u!114 &676032613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 676032612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &676032614
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3172,6 +3188,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -3185,20 +3211,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 706043642}
---- !u!114 &706043645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 706043644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &706043646
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3341,7 +3353,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &726883343
 Prefab:
@@ -3398,6 +3410,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -3411,20 +3433,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 726883343}
---- !u!114 &726883346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 726883345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &726883347
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3477,7 +3485,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Icon
@@ -3558,6 +3566,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -3571,20 +3589,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 735726452}
---- !u!114 &735726455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 735726454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &735726456
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3600,6 +3604,64 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 18.8, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1001 &755115217
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 335.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 43.032085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.7932339
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 34.332314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760513640247008, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_Name
+      value: Water (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &755583840
 Prefab:
   m_ObjectHideFlags: 0
@@ -3655,6 +3717,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -3668,20 +3740,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 755583840}
---- !u!114 &755583843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 755583842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &755583844
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3739,7 +3797,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &772539056
 Prefab:
@@ -3796,6 +3854,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -3809,20 +3877,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 772539056}
---- !u!114 &772539059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 772539058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &772539060
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3893,6 +3947,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -3906,20 +3970,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 830775470}
---- !u!114 &830775473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 830775472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &830775474
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3990,6 +4040,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -4003,20 +4063,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 869581191}
---- !u!114 &869581194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 869581193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &869581195
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4036,6 +4082,64 @@ NavMeshObstacle:
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: e28d41bd6402fcc46b30fb30c73caa90, type: 3}
   m_PrefabInternal: {fileID: 422877509}
+--- !u!1001 &902053457
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -341
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 43.032085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.7932339
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 34.332314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760513640247008, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_Name
+      value: Water (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &922238596
 Prefab:
   m_ObjectHideFlags: 0
@@ -4165,6 +4269,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -4178,20 +4292,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 948046796}
---- !u!114 &948046799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 948046798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &948046800
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4262,6 +4362,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -4275,20 +4385,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 951037696}
---- !u!114 &951037699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 951037698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &951037700
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4346,7 +4442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &979188289
 GameObject:
@@ -4479,6 +4575,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -4492,20 +4598,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 991166523}
---- !u!114 &991166526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 991166525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &991166527
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4841,6 +4933,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -4972,6 +5074,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -4985,20 +5097,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1142021899}
---- !u!114 &1142021902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1142021901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1142021903
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5069,6 +5167,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -5082,20 +5190,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1206367696}
---- !u!114 &1206367699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1206367698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1206367700
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5228,6 +5322,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -5241,20 +5345,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1245000240}
---- !u!114 &1245000243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1245000242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1245000244
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5325,6 +5415,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -5338,20 +5438,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1247233806}
---- !u!114 &1247233809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1247233808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1247233810
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5422,6 +5508,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -5435,20 +5531,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1264487295}
---- !u!114 &1264487298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1264487297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1264487299
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5519,6 +5601,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -5532,20 +5624,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1307011769}
---- !u!114 &1307011772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1307011771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1307011773
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5561,6 +5639,50 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 18.8, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1316194719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1316194721}
+  - component: {fileID: 1316194720}
+  m_Layer: 0
+  m_Name: Spawner (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1316194720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316194719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6326192112a4b42b78ea099e2ec380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GC: {fileID: 1680696010}
+  Robot: {fileID: 1912243868694016, guid: 3d4846ab2a1944f7a9d91b43c2afb7a9, type: 2}
+  MinSpawnTime: 5
+  MaxSpawnTime: 15
+--- !u!4 &1316194721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316194719}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 84.9, y: 1.24, z: 90.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1339307356
 Prefab:
   m_ObjectHideFlags: 0
@@ -5616,6 +5738,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -5629,20 +5761,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1339307356}
---- !u!114 &1339307359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1339307358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1339307360
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5712,6 +5830,16 @@ Prefab:
     - target: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647, type: 2}
       propertyPath: m_Name
       value: Tree1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
@@ -5796,7 +5924,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1383544578
 GameObject:
@@ -5867,7 +5995,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403588387
 GameObject:
@@ -9386,7 +9514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1487237790
 GameObject:
@@ -9575,7 +9703,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1513346739
 Prefab:
@@ -9632,6 +9760,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -9645,20 +9783,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1513346739}
---- !u!114 &1513346742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1513346741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1513346743
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9797,6 +9921,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -9810,20 +9944,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1539638838}
---- !u!114 &1539638841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1539638840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1539638842
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9894,6 +10014,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -9907,20 +10037,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1613316172}
---- !u!114 &1613316175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1613316174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1613316176
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9991,6 +10107,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -10004,20 +10130,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1644387900}
---- !u!114 &1644387903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1644387902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1644387904
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10088,6 +10200,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -10101,20 +10223,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1680034485}
---- !u!114 &1680034488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1680034487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1680034489
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10231,6 +10339,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -10244,20 +10362,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1700691308}
---- !u!114 &1700691311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1700691310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1700691312
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10328,6 +10432,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -10341,20 +10455,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1706520548}
---- !u!114 &1706520551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1706520550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1706520552
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10425,6 +10525,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -10438,20 +10548,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1722906465}
---- !u!114 &1722906468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1722906467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1722906469
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10521,6 +10617,16 @@ Prefab:
     - target: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647, type: 2}
       propertyPath: m_Name
       value: Tree1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
@@ -10619,6 +10725,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -10711,6 +10827,16 @@ Prefab:
     - target: {fileID: 4801115850940866, guid: cc5312118d3184558a13e1032aa85647, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.17360651
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
@@ -10806,7 +10932,7 @@ Transform:
   - {fileID: 6177453}
   - {fileID: 830775471}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765262093
 GameObject:
@@ -11005,6 +11131,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -11102,6 +11238,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -11115,20 +11261,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1889580872}
---- !u!114 &1889580875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1889580874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1889580876
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11199,6 +11331,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -11212,20 +11354,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1909592782}
---- !u!114 &1909592785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1909592784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1909592786
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11270,7 +11398,7 @@ Transform:
   m_Children:
   - {fileID: 1206414866}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1927686523
 BoxCollider:
@@ -11352,6 +11480,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -11365,20 +11503,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1954797505}
---- !u!114 &1954797508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1954797507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &1954797509
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11394,6 +11518,64 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 18.8, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1001 &2004962701
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -294.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 43.032085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.7932339
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110622547909820, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 34.332314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760513640247008, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+      propertyPath: m_Name
+      value: Water (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 31ce64b7e1f464fd68834aac22a3a4f7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2075039134
 GameObject:
   m_ObjectHideFlags: 0
@@ -12289,27 +12471,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2085857256 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 1750254614}
---- !u!114 &2085857257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2085857256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &2085857258
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12385,6 +12553,16 @@ Prefab:
       propertyPath: m_Name
       value: Tree1 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MinResourcePerHit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747273283643974, guid: cc5312118d3184558a13e1032aa85647,
+        type: 2}
+      propertyPath: MaxResourcePerhit
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5312118d3184558a13e1032aa85647, type: 2}
   m_IsPrefabParent: 0
@@ -12398,20 +12576,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1747016473813716, guid: cc5312118d3184558a13e1032aa85647,
     type: 2}
   m_PrefabInternal: {fileID: 2126101968}
---- !u!114 &2126101971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2126101970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36117f568ff17424ab3a448318288a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinResourcePerHit: 4
-  MaxResourcePerhit: 10
-  Health: 5
 --- !u!208 &2126101972
 NavMeshObstacle:
   m_ObjectHideFlags: 0

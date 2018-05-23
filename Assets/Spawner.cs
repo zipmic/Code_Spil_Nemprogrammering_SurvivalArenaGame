@@ -24,6 +24,45 @@ public class Spawner : MonoBehaviour {
             tmp.transform.position = transform.position+Vector3.right*(Random.Range(-5,5))+Vector3.forward*Random.Range(-5,5);
             tmp.GetComponent<NavMeshAgent>().enabled = true;
 
+            NavMeshAgent nm = tmp.GetComponent<NavMeshAgent>();
+
+            if (GC.DifficultyLevel == 1)
+            {
+                nm.speed = 1.8f;
+            }
+            else if (GC.DifficultyLevel == 2)
+            {
+                nm.speed = 2.4f;
+                MinSpawnTime = 4;
+                MaxSpawnTime = 13;
+            }
+            else if (GC.DifficultyLevel == 3)
+            {
+                nm.speed = 3f;
+                MinSpawnTime = 3;
+                MaxSpawnTime = 10;
+            }
+            else if (GC.DifficultyLevel == 4)
+            {
+                nm.speed = 3.8f;
+                MinSpawnTime = 3;
+                MaxSpawnTime = 8;
+            }
+            else if (GC.DifficultyLevel == 5)
+            {
+                nm.speed = 5f;
+                MinSpawnTime = 3;
+                MaxSpawnTime = 7;
+            }
+            else
+            {
+                nm.speed = 5f;
+                MinSpawnTime = 3;
+                MaxSpawnTime = 7;
+            }
+                
+
+
         }
 
 		
