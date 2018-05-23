@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1838429, g: 0.22858867, b: 0.30079406, a: 1}
+  m_IndirectSpecularColor: {r: 0.18384321, g: 0.228589, b: 0.30079505, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5782,7 +5782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae00db61b5f4b41229a5badc2cc98462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmountOfTree: 0
+  AmountOfTree: 300
   AmountOfStone: 0
   TextTree: {fileID: 1827121141}
 --- !u!4 &1374002408
@@ -9706,7 +9706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.0000088215, y: 0}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0}
   m_SizeDelta: {x: 0.000015259, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1536017046
@@ -10161,7 +10161,7 @@ MonoBehaviour:
   EndScreen: {fileID: 1006961633}
   DifficultyLevel: 1
   BaseHealth: {fileID: 722710470}
-  BaseHealthScript: {fileID: 0}
+  BaseHealthScript: {fileID: 1927686524}
   EndExplosion: {fileID: 1489923451}
 --- !u!4 &1680696011
 Transform:

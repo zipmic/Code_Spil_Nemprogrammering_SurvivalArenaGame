@@ -38,32 +38,39 @@ public class WeaponController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && PlacingTurret == false)
         {
-            
-            PlacingTurret = true;
+            if (ResourceControllerRef.AmountOfTree >= 100)
+            {
+                PlacingTurret = true;
+            }
         }
         else if (PlacingTurret)
         {
-            RaycastHit hit;
-
-            if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 10, TerrainMask))
+            if (ResourceControllerRef.AmountOfTree >= 100)
             {
+                RaycastHit hit;
+
+                if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 10, TerrainMask))
+                {
                 
                     TurretPlaceHolder.gameObject.SetActive(true);
                     TurretPlaceHolder.transform.position = hit.point + Vector3.up * 0.5f;
                     TurretPlaceHolder.transform.forward = transform.forward;
 
 
-            }
+                }
 
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                GameObject t = Instantiate(TurretPrefab) as GameObject;
-                t.transform.position = hit.point+Vector3.up*0.5f;
-                t.transform.forward = transform.forward;
-                t.name = "Turret";
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    GameObject t = Instantiate(TurretPrefab) as GameObject;
+                    t.transform.position = hit.point + Vector3.up * 0.5f;
+                    t.transform.forward = transform.forward;
+                    t.name = "Turret";
 
-                PlacingTurret = false;
-                TurretPlaceHolder.SetActive(false);
+                    ResourceControllerRef.AmountOfTree -= 100;
+
+                    PlacingTurret = false;
+                    TurretPlaceHolder.SetActive(false);
+                }
             }
             
         }
