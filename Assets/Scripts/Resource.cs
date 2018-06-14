@@ -27,7 +27,15 @@ public class Resource : MonoBehaviour {
 
         // Give skade
         Health -= 1;
-        print("Jeg blev ramt!");
+
+        if (isTree)
+        {
+            GameObject.Find("ResourceController").GetComponent<ResourceController>().AddResource(AmountOfResourcesPerHit, "wood");
+        }
+        else if (isStone)
+        {
+            GameObject.Find("ResourceController").GetComponent<ResourceController>().AddResource(AmountOfResourcesPerHit, "stone");
+        }
 
         if (Health <= 0)
         {
