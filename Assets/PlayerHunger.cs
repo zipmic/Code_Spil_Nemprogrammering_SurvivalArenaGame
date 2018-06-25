@@ -12,6 +12,15 @@ public class PlayerHunger : MonoBehaviour {
     {
         return _hunger;
     }
+
+    public void AddHunger(float AmountOfHunger)
+    {
+        _hunger += AmountOfHunger;
+        if (_hunger > 100)
+        {
+            _hunger = 100;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,6 +29,7 @@ public class PlayerHunger : MonoBehaviour {
         if (_hunger <= 0)
         {
             _hunger = 0;
+            Destroy(gameObject);
         }
 		
 	}
