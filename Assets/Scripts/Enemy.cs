@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour {
     public GameObject Target;
     private NavMeshAgent _navAgent;
 
+    public int AmountOfDamage = 1;
+
 	// Use this for initialization
 	void Start () {
         _navAgent = GetComponent<NavMeshAgent>();
@@ -21,6 +23,21 @@ public class Enemy : MonoBehaviour {
         _navAgent.SetDestination(Target.transform.position);
 
 	}
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Base")
+        {
+            other.gameObject.GetComponent<BaseHealth>().TakeDamage(AmountOfDamage);
+            Destroy(gameObject);
+        }
+
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(AmountOfDamage);
+            Destroy(gameObject);
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
