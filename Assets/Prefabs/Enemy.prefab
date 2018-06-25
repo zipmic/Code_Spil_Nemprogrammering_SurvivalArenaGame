@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 54571848872589130}
   - component: {fileID: 114075389630425510}
   - component: {fileID: 135384044718059966}
+  - component: {fileID: 114136088703351492}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -40,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1361792937029698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.48, y: 0.83, z: 17.98}
+  m_LocalPosition: {x: -4.05, y: 1.32, z: -28.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,6 +128,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   AmountOfDamage: 1
+--- !u!114 &114136088703351492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1361792937029698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181845a4d86ebb54dbd8202b57c79005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 1
 --- !u!135 &135384044718059966
 SphereCollider:
   m_ObjectHideFlags: 1
