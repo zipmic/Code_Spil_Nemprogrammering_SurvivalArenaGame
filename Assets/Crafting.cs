@@ -5,6 +5,9 @@ using UnityEngine;
 public class Crafting : MonoBehaviour {
 
     public GameObject CraftingMenu;
+    public ResourceController ResourceControllerRef;
+    public WeaponsController WeaponsController;
+
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +16,23 @@ public class Crafting : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
 		
 	}
+
+    public void BuyTurret()
+    {
+        //menu til at forsvinde
+        CraftingMenu.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        if (ResourceControllerRef.AmountOfWood >= 50)
+        {
+            ResourceControllerRef.AddResource(-50, "wood");
+            WeaponsController.PlaceTurret();
+
+        }
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

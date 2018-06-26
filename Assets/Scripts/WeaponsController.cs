@@ -18,6 +18,7 @@ public class WeaponsController : MonoBehaviour {
     public bool PistolEnabled = false;
 
     private Pistol _pistol;
+    private bool _canPlaceTurret = false;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +26,11 @@ public class WeaponsController : MonoBehaviour {
         _pistol = GetComponent<Pistol>();
 		
 	}
+
+    public void PlaceTurret()
+    {
+        _canPlaceTurret = true;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -89,12 +95,11 @@ public class WeaponsController : MonoBehaviour {
 
         _axeInterval += Time.deltaTime;
 
-     
-        if (Input.GetKeyDown(KeyCode.E))
+        if (_canPlaceTurret == true)
         {
-            if (ResourceControllerRef.AmountOfStone >= 50)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                ResourceControllerRef.AddResource(-50, "stone");
+                _canPlaceTurret = false;
 
                 RaycastHit TerrainHit; 
                 if (Physics.Raycast(FPSCamera.transform.position, FPSCamera.transform.forward, out TerrainHit, 10, TurretHitMask))
@@ -103,8 +108,9 @@ public class WeaponsController : MonoBehaviour {
                     SpawnedTurret.transform.position = TerrainHit.point;
                     SpawnedTurret.transform.forward = FPSCamera.transform.parent.transform.forward;
                 }
-            }
 
+
+            }
         }
 
 
