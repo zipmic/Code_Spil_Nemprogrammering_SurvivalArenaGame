@@ -31,6 +31,16 @@ public class WeaponsController : MonoBehaviour {
     {
         _canPlaceTurret = true;
     }
+
+    public void SetSelectedWeapon(int selectedWeapon)
+    {
+        _selectedWeapon = selectedWeapon;
+        if (selectedWeapon == 2)
+        {
+            _pistol.enabled = true;
+        }
+    }
+        
 	
 	// Update is called once per frame
 	void Update () {
@@ -83,6 +93,7 @@ public class WeaponsController : MonoBehaviour {
             // pistol
             WeaponAxe.SetActive(false);
             WeaponPistol.SetActive(true);
+
         }
 
 

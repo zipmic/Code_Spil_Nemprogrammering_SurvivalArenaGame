@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Crafting : MonoBehaviour {
 
     public GameObject CraftingMenu;
     public ResourceController ResourceControllerRef;
     public WeaponsController WeaponsController;
+    public Pistol PistolRef;
+    public Button PistolButton;
 
 
 	// Use this for initialization
@@ -32,6 +35,33 @@ public class Crafting : MonoBehaviour {
         }
 
 
+    }
+
+    public void BuyAmmo()
+    {
+        if (ResourceControllerRef.AmountOfWood >= 10)
+        {
+            ResourceControllerRef.AddResource(-10, "wood");
+            PistolRef.AddAmmo(10);
+
+        }
+    }
+
+    public void BuyPistol()
+    {
+        if (ResourceControllerRef.AmountOfStone >= 50)
+        {
+          
+            ResourceControllerRef.AddResource(-50, "stone");
+            PistolButton.interactable = false;
+            WeaponsController.PistolEnabled = true;
+            CraftingMenu.SetActive(false);
+            WeaponsController.SetSelectedWeapon(2);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+ 
     }
 	
 	// Update is called once per frame
