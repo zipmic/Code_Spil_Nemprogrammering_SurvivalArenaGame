@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHunger : MonoBehaviour {
 
 
     private float _hunger = 100;
     public float _rateOfHunger = 1;
+	public GameObject DeathScreen;
 
     public float GetHunger()
     {
@@ -29,8 +31,11 @@ public class PlayerHunger : MonoBehaviour {
         if (_hunger <= 0)
         {
             _hunger = 0;
-            Destroy(gameObject);
-        }
+			DeathScreen.SetActive(true);
+			DeathScreen.transform.Find("Info").GetComponent<Text>().text = "You became too hungry and died :(";
+
+
+		}
 		
 	}
 }

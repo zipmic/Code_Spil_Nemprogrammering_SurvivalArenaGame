@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public int Health = 3;
     public Slider PlayerHealthSlider;
+	public GameObject DeathScreen;
 
     public void TakeDamage(int AmountOfDamage)
     {
@@ -15,7 +16,9 @@ public class PlayerHealth : MonoBehaviour {
 
         if (Health <= 0)
         {
-            Destroy(gameObject);
-        }
+			DeathScreen.SetActive(true);
+			DeathScreen.transform.Find("Info").GetComponent<Text>().text = "You died!";
+
+		}
     }
 }

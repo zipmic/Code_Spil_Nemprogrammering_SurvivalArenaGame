@@ -11,6 +11,8 @@ public class DayNightSystem : MonoBehaviour {
     private int _day = 1;
     private bool _night1, _night2, _night3;
 
+	public GameObject WinScreen;
+
     // day 1 - 0 til 180 
     // night 1 - 180 - 360
   // day 2 - 360 - 540
@@ -93,7 +95,10 @@ public class DayNightSystem : MonoBehaviour {
         }
 
 
-
+		if (CycleValue >= 1080)
+		{
+			WinScreen.SetActive(true);
+		}
 		
 	}
 }
