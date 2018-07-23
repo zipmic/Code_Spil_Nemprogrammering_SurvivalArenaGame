@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour {
 
     public int AmountOfDamage = 1;
 
+	public GameObject ExplosionPrefab;
+
 	// Use this for initialization
 	void Start () {
         _navAgent = GetComponent<NavMeshAgent>();
@@ -29,14 +31,24 @@ public class Enemy : MonoBehaviour {
         if (other.gameObject.tag == "Base")
         {
             other.gameObject.GetComponent<BaseHealth>().TakeDamage(AmountOfDamage);
-            Destroy(gameObject);
+
+			GameObject tmp = Instantiate(ExplosionPrefab) as GameObject;
+			tmp.transform.position = transform.position;
+			Destroy(tmp, 4);
+		
+			Destroy(gameObject);
         }
 
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(AmountOfDamage);
-            Destroy(gameObject);
+			GameObject tmp = Instantiate(ExplosionPrefab) as GameObject;
+			tmp.transform.position = transform.position;
+			Destroy(tmp, 4);
+			Destroy(gameObject);
         }
+
+
     }
 
     void OnTriggerEnter(Collider other)

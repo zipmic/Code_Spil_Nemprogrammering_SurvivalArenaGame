@@ -20,7 +20,7 @@ public class SpawnController : MonoBehaviour {
         _player = GameObject.Find("StationLargeCenter");
 
         _randomInterval = Random.Range(MinInterval, MaxInterval);
-        print(_randomInterval);
+
 		
 	}
 	
@@ -39,7 +39,7 @@ public class SpawnController : MonoBehaviour {
 
                 _counter = 0;
                 _randomInterval = Random.Range(MinInterval, MaxInterval);
-                print(_randomInterval);
+
             }
         }
 		

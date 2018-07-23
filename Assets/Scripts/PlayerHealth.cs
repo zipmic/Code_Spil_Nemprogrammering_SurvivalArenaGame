@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour {
 
     public void TakeDamage(int AmountOfDamage)
     {
+		print("Player was hit with: " + AmountOfDamage);
         Health -= AmountOfDamage;
         PlayerHealthSlider.value = Health;
 

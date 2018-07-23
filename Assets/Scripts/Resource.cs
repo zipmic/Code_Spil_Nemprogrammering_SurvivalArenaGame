@@ -14,11 +14,7 @@ public class Resource : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            // test!
-            Hit();
-        }
+       
     }
 
 	public void Hit()

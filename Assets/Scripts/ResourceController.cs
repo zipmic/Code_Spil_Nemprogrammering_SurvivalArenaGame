@@ -14,13 +14,13 @@ public class ResourceController : MonoBehaviour {
         if (Type == "wood")
         {
             AmountOfWood += Amount;
-            AmountOfWoodText.text = "Wood: " + AmountOfWood;
+            AmountOfWoodText.text = "" + AmountOfWood;
         }
 
         if (Type == "stone")
         {
             AmountOfStone += Amount;
-            AmountOfStoneText.text = "Stone: " + AmountOfStone;
+            AmountOfStoneText.text = "" + AmountOfStone;
         }
     }
 }
